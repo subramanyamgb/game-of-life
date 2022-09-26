@@ -2,4 +2,8 @@ node {
     stage('test') {
         sh 'echo hello this is subash'
     }
+    stage('learning') {
+        git url: 'https://github.com/subramanyamgb/game-of-life',
+            branch: 'master'
+    }
 }
